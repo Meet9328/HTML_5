@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #0d47a1;
+            padding: 10px 0;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            left: 20px;
+            margin-left: 50%;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li:hover {
+            background-color: #1565c0;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 10px;
+            background-color: #0d47a1;
+            display: none;
+            min-width: 160px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li:hover>ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            position: relative;
+        }
+
+        nav ul li ul li ul {
+            top: 0;
+            left: 100%;
+        }
+
+        nav ul li button {
+            height: 30px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            border: 3px solid white;
+            text-shadow: none;
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Services ▼</a>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li>
+                        <a href="#">More ▸</a>
+                        <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">jQuery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button>Login</button></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
